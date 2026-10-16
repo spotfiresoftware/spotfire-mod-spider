@@ -16,10 +16,12 @@ The [Wiki](https://github.com/spotfiresoftware/spotfire-mod-spider/wiki) contain
 
 In a terminal window:
 - `npm install`
-- `npm run build-watch`
+- `npm run build:dev`
 
 In a new terminal window:
 - `npm run server`
+
+Webpack bundles `src/main.ts` into `dist/bundle.js` and copies the contents of `static` into `dist`. The development build watches for changes and includes inline source maps. The development server serves `dist`, including its manifest and all assets. Alternatively, run `npm run dev` to start both the watch build and server.
 
 ### Building for production
 
